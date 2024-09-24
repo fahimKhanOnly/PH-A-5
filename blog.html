@@ -16,12 +16,12 @@
 </head>
 <body>
         
-    <header>
+    <header class="w-full backdrop-blur-xl h-24 fixed top-0">
         <div class="container mx-auto">
             <nav class="container top-0 fixed">
-                <div class="navbar bg-base-100 items-center">
+                <div class="navbar bg-base-100 bg-transparent backdrop-blur-xl sm:mt-3">
                     <div class="navbar-start">
-                        <a href="./index.html"><button class="bg-[#B4F461] text-black btn border-none font-bold text-lg px-4 btn-sm sm:btn-md sm:px-8">Home</button></a>
+                        <a href="./index.html"><button class="bg-[#B4F461] text-black btn border-none font-bold text-base px-2.5 btn-sm sm:btn-md sm:px-8 sm:text-lg">Home</button></a>
                     </div>
     
                     <div class="navbar-center flex-col gap-x-2.5 sm:flex-row">
@@ -30,7 +30,7 @@
                     </div>
     
                     <div class="navbar-end items-center gap-x-0.5">
-                        <img class="size-6 sm:size-8" src="./assets/coin.png" alt="Coin">
+                        <img class="size-5 sm:size-8" src="./assets/coin.png" alt="Coin">
                         <p class="font-medium text-sm text-[#111111B3] sm:text-lg sm:font-semibold"><span id="total-balance">10000</span> BDT</p>
                     </div>
                 </div>
@@ -39,39 +39,39 @@
     </header>
 
     <main class="container mx-auto">
-        <section class="container absolute top-40 -z-10 ">
-            <h1 class="font-black text-4xl mb-9">Important FAQ <i class="rotate-12 fa-regular fa-circle-question"></i></h1>
+        <section class="container absolute top-40 -z-10 px-3 pb-11">
+            <h1 class="font-black text-[2.5rem] mb-9">Important FAQ <i class="rotate-12 fa-regular fa-circle-question"></i></h1>
             <div class="join join-vertical w-full">
                 <div class="collapse collapse-arrow join-item border-base-300 border">
-                  <input type="radio" name="my-accordion-4" checked="checked" />
-                  <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                  <input type="radio" name="my-accordion-4" checked="checked"/>
+                  <div class="collapse-title text-xl font-bold">What is the Document Object Model (DOM)?</div>
                   <div class="collapse-content">
-                    <p>hello</p>
+                    <p class="text-lg">DOM is a programming interface for web documents. It represents the structure of a webpage as a hierarchical tree of objects.</p>
                   </div>
                 </div>
                 <div class="collapse collapse-arrow join-item border-base-300 border">
                   <input type="radio" name="my-accordion-4" />
-                  <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                  <div class="collapse-title text-xl font-bold">How do you select an element from the DOM?</div>
                   <div class="collapse-content">
-                    <p>hello</p>
+                    <p class="text-lg">We can select Element using these methods getElementById(), getElementsByTagName(), querySelector(), querySelectorAll(), etc.</p>
                   </div>
                 </div>
                 <div class="collapse collapse-arrow join-item border-base-300 border">
                   <input type="radio" name="my-accordion-4" />
-                  <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                  <div class="collapse-title text-xl font-bold">What is event delegation in the context of the DOM, and why is it useful?</div>
                   <div class="collapse-content">
-                    <p>hello</p>
+                    <p class="text-lg">Event delegation is a way of propagation to manage events efficiently. It allows to adding event listener in a single-parent element. This event listener takes advantage of event bubbling to handle its children.</p>
                   </div>
                 </div>
                 <div class="collapse collapse-arrow join-item border-base-300 border">
                     <input type="radio" name="my-accordion-4" />
-                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                    <div class="collapse-title text-xl font-bold">How do you manipulate an element's attributes and styles using the DOM?</div>
                     <div class="collapse-content">
-                      <p>hello</p>
+                      <p class="text-lg">We can Manipulate attributes using these methods setAttribute(), getAttribute(), removeAttribute(), etc. and We can manipulate styles
+                        using this property "style". Also using these methods in classList.add(), classList.remove(), etc.</p>
                     </div>
                   </div>
               </div>
-
         </section>
     </main>
 

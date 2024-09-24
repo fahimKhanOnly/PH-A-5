@@ -2,7 +2,7 @@ function calculate(a, x, y, z, where){
     document.getElementById(a).addEventListener("click", function(event){
         event.preventDefault();
         let amount = getAmount(x);
-        if(amount <= 0 || isNaN(amount)){
+        if(amount <= 0 || isNaN(amount) || amount > getText(y)){
             alert("Invalid Donation Amount!");
         }
         else{
