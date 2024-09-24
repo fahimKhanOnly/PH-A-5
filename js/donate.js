@@ -13,6 +13,7 @@ function calculate(a, x, y, z, where){
             document.getElementById(z).textContent = newAmount;
             document.getElementById(x).value = "";
             makeHistory(amount, getFundName(where));
+            giveCongrats();
         }
     })
 }

@@ -10,3 +10,6 @@ function getFundName(id){
     let value = document.getElementById(id).innerText;
     return value;
 }
+function giveCongrats(){
+    document.getElementById("my_modal_1").showModal();
+}

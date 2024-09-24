@@ -56,7 +56,8 @@
                     <h1 id="topic1" class="font-bold text-xl sm:text-2xl">Donate for Flood at Noakhali, Bangladesh</h1>
                     <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                     <input id="amount1" class="w-full outline-none border rounded-lg px-4 h-11 md:h-14" autocomplete="off" type="text" placeholder="Write Donation Amount">
-                    <button id="donate-btn1" class="bg-[#B4F461] w-full text-black cursor-pointer btn border-none font-bold text-lg btn-sm h-11 sm:btn-md sm:px-8 md:h-14">Donate Now</button>
+                    <button onclick="showModal()" id="donate-btn1" class="bg-[#B4F461] w-full text-black cursor-pointer btn border-none font-bold text-lg btn-sm h-11 sm:btn-md sm:px-8 md:h-14">Donate Now</button>
+
                 </div>
             </div>
             <div class="max-w-[530px] mx-auto border rounded-2xl p-5 space-y-5 flex items-center flex-col lg:flex-row lg:space-x-5  xl:space-x-8 lg:p-8 lg:max-w-none xl:max-w-[1205px]">
@@ -69,7 +70,7 @@
                     <h1 id="topic2" class="font-bold text-xl sm:text-2xl">Donate for Flood Relief in Feni,Bangladesh</h1>
                     <p>The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                     <input id="amount2" class="w-full outline-none border rounded-lg px-4 h-11 md:h-14" autocomplete="off" type="text" placeholder="Write Donation Amount">
-                    <button id="donate-btn2" class="bg-[#B4F461] w-full cursor-pointer text-black btn border-none font-bold text-lg btn-sm h-11 sm:btn-md sm:px-8 md:h-14">Donate Now</button>
+                    <button onclick="showModal()" id="donate-btn2" class="bg-[#B4F461] w-full cursor-pointer text-black btn border-none font-bold text-lg btn-sm h-11 sm:btn-md sm:px-8 md:h-14">Donate Now</button>
                 </div>
             </div>
             <div class="max-w-[530px] mx-auto border rounded-2xl p-5 space-y-5 flex items-center flex-col lg:flex-row lg:space-x-5  xl:space-x-8 lg:p-8 lg:max-w-none xl:max-w-[1205px]">
@@ -82,9 +83,23 @@
                     <h1 id="topic3" class="font-bold text-xl sm:text-2xl">Aid for Injured in the Quota Movement, Bangladesh</h1>
                     <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                     <input id="amount3" class="w-full outline-none border rounded-lg px-4 h-11 md:h-14" autocomplete="off" type="text" placeholder="Write Donation Amount">
-                    <button id="donate-btn3" class="bg-[#B4F461] w-full text-black cursor-pointer btn border-none font-bold text-lg btn-sm h-11 sm:btn-md md:h-14">Donate Now</button>
+                    <button onclick="showModal()" id="donate-btn3" class="bg-[#B4F461] w-full text-black cursor-pointer btn border-none font-bold text-lg btn-sm h-11 sm:btn-md md:h-14">Donate Now</button>
                 </div>
             </div>
+
+            <dialog id="my_modal_1" class="modal">
+                <div class="modal-box flex flex-col items-center justify-center">
+                    <h3 class="text-[2.5rem] font-black">Congrates!</h3>
+                    <img class="size-11 my-5" src="./assets/coin.png" alt="Coin">
+                    <p class="py-4 text-center text-[#111111B3] font-medium">You Have Donated for Humankind</p>
+                    <h4 class="text-2xl font-black">Successfully</h3>
+                    <div class="modal-action">
+                    <form method="dialog">
+                        <button class="btn font-bold">Close confirmation</button>
+                    </form>
+                    </div>
+                </div>
+            </dialog>
         </section>
 
         <section id="history" class="hidden container mx-auto px-3 absolute top-56 -z-10 space-y-5 pb-11 md:px-10"></section>
